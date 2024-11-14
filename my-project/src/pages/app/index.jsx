@@ -1,3 +1,4 @@
+//importamos las paginas o componentes
 import { useRoutes, BrowserRouter } from 'react-router-dom'
 import Home from '../home/index'
 import MyAccount from '../myAccount'
@@ -5,6 +6,7 @@ import MyOrder from '../myOrder'
 import MyOrders from '../myOrders'
 import NotFound from '../notFound'
 import Signin from '../signin'
+import Navbar from '../../components/navbar'
 import './App.css'
 
 const AppRoutes = () => {
@@ -24,7 +26,8 @@ const App = () => {
 
     return(
       <BrowserRouter>
-        <AppRoutes />
+        <AppRoutes /> 
+        <Navbar/> 
       </BrowserRouter>
   
     )
